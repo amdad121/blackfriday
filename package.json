@@ -1,0 +1,17 @@
+{
+  "name": "blackfriday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss build ./src/app.css -o ./dist/css/app.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.7",
+    "tailwindcss": "^2.0.1"
+  }
+}

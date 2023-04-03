@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.7.3/alpine.js'></script>
+</head>
+
+<body class="relative text-gray-800" x-data="{ atTop: true }"
+    x-on:scroll.window="atTop = (window.pageYOffset > 100) ? false : true; ">
+    <div :class="{ 'bg-black bg-opacity-95 shadow-lg': !atTop }" class="py-2 px-2 fixed inset-x-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <div class="w-32 md:w-60">
+                    <a href="#">
+                        <img src="https://my.ekotahost.com/assets/img/logo.png" alt="EkotaHost" class="w-full">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="px-3 py-2 text-white font-medium hover:text-gray-300">Home</a>
+                <a href="#" class="pl-3 py-2 text-white font-medium hover:text-gray-300">Client Area</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-pattern text-white">
+        <div class="bg-black bg-opacity-90">
+            <div class="container mx-auto flex justify-center items-center min-h-screen">
+                <div class="md:p-16 rounded-full text-center pt-24">
+                    <div class="md:text-2xl text-left font-medium uppercase">UPTO</div>
+                    <h1 class="text-7xl md:text-9xl text-red-600 font-bold uppercase">75% OFF</h1>
+                    <div class="md:text-2xl text-right font-medium uppercase">on Web Hosting</div>
+                    <h2 class="text-4xl md:text-6xl my-3 capitalize">Black Friday Sale!</h2>
+                    <div id="countdown" class="ring-2 ring-red-600 px-3 py-2 mt-10"></div>
+                    <a href="#offer" class="inline-block mt-16">
+                        <svg class="animate-bounce w-8 h-8 text-amber-900 mx-auto p-2 bg-red-600 rounded-full text-white stroke-current"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="offer" class="py-10 container mx-auto">
+        <div class="text-center">
+            <div class="text-3xl font-semibold capitalize my-2">Hosting Offer!</div>
+            <p class="text-lg">Find your perfect Hosting.</p>
+        </div>
+        <div class="my-5 md:flex md:justify-center pt-5">
+            <div class="max-w-64 mx-8 my-4 ring-1 ring-gray-100 shadow px-5 py-2 rounded-xl">
+                <div class="text-center font-semibold border-b-2 border-gray-100 pb-2 text-2xl capitalize">Starter</div>
+                <h2 class="my-3 text-center text-red-600 font-semibold text-5xl uppercase">75% off</h2>
+                <div class="text-lg">Coupon : <span
+                        class="border-2 border-dashed px-2 py-1 select-all uppercase">EH1GBF2020</span></div>
+                <div class="mt-4 text-center">
+                    <span class="line-through text-red-600">1200TK</span>
+                    <span class="text-2xl">1yr@300TK</span>
+                </div>
+                <ul class="mt-2 border-t-2 border-gray-100">
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> 1GB SSD
+                    </li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> 25GB
+                        Bandwidth</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> 1
+                        Website</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Free SSL
+                        Certificate</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Free
+                        CloudFlare CDN</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> cPanel
+                        Control Panel</li>
+                    <li class="py-2 border-b">
+                        <span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span>
+                        <a href="#" class="border-b border-gray-200 hover:border-opacity-0">More Details</a>
+                    </li>
+                </ul>
+                <div class="text-center mt-3">
+                    <a href="#"
+                        class=" bg-red-600 text-white px-10 py-2 text-center rounded inline-block my-1 hover:bg-white hover:text-red-600 shadow-md">Buy
+                        Now</a>
+                </div>
+            </div>
+            <div class="max-w-64 mx-8 my-4 ring-1 ring-gray-100 shadow px-5 py-2 rounded-xl">
+                <div class="text-center font-semibold border-b-2 border-gray-100 pb-2 text-2xl capitalize">Rewarder
+                </div>
+                <h2 class="my-3 text-center text-red-600 font-semibold text-5xl uppercase">73% off</h2>
+                <div class="text-lg">Coupon : <span
+                        class="border-2 border-dashed px-2 py-1 select-all uppercase">EH5GBF2020</span></div>
+                <div class="mt-4 text-center">
+                    <span class="line-through text-red-600">3000TK</span>
+                    <span class="text-2xl">1yr@800TK</span>
+                </div>
+                <ul class="mt-2 border-t-2 border-gray-100">
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> 5GB SSD
+                    </li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> 150GB
+                        Bandwidth</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> 5
+                        Website</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Free SSL
+                        Certificate</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Free
+                        CloudFlare CDN</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> cPanel
+                        Control Panel</li>
+                    <li class="py-2 border-b">
+                        <span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span>
+                        <a href="#" class="border-b border-gray-200 hover:border-opacity-0">More Details</a>
+                    </li>
+                </ul>
+                <div class="text-center mt-3">
+                    <a href="#"
+                        class=" bg-red-600 text-white px-10 py-2 text-center rounded inline-block my-1 hover:bg-white hover:text-red-600 shadow-md">Buy
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-10 border-t border-gray-200">
+        <div class="text-center">
+            <div class="text-3xl font-semibold capitalize my-2">Domain Offer!</div>
+            <p class="text-lg">Gety your Domain.</p>
+        </div>
+        <div class="my-5 md:flex md:justify-center pt-5">
+            <div class="max-w-64 mx-8 my-4 ring-1 ring-gray-100 shadow px-5 py-2 rounded-xl">
+                <div class="text-center font-semibold border-b-2 border-gray-100 pb-2 text-5xl lowercase"><span
+                        class="text-blue-400">.</span><span class="text-blue-700">com</span></div>
+                <h2 class="my-3 text-center text-red-600 font-semibold text-5xl uppercase">699 Taka</h2>
+                <ul class="mt-4 border-t-2 border-gray-100">
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> EPP
+                        Transfer Code</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Free DNS
+                        Management</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Free
+                        Domain Fowordwing</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> ID
+                        Protection (Premium)</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Full
+                        Domein Control</li>
+                </ul>
+                <div class="text-center mt-3">
+                    <a href="#"
+                        class=" bg-red-600 text-white px-10 py-2 text-center rounded inline-block my-1 hover:bg-white hover:text-red-600 shadow-md">Get
+                        Now</a>
+                </div>
+            </div>
+            <div class="max-w-64 mx-8 my-4 ring-1 ring-gray-100 shadow px-5 py-2 rounded-xl">
+                <div class="text-center font-semibold border-b-2 border-gray-100 pb-2 text-5xl lowercase"><span
+                        class="text-orange-500">.</span><span class="text-gray-900">net</span></div>
+                <h2 class="my-3 text-center text-red-600 font-semibold text-5xl uppercase">650 Taka</h2>
+                <ul class="mt-4 border-t-2 border-gray-100">
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> EPP
+                        Transfer Code</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Free DNS
+                        Management</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Free
+                        Domain Fowordwing</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> ID
+                        Protection (Premium)</li>
+                    <li class="py-2 border-b"><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2"></span> Full
+                        Domein Control</li>
+                </ul>
+                <div class="text-center mt-3">
+                    <a href="#"
+                        class=" bg-red-600 text-white px-10 py-2 text-center rounded inline-block my-1 hover:bg-white hover:text-red-600 shadow-md">Get
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-700 text-white">
+        <div class="container mx-auto md:flex md:justify-around md:items-center">
+            <div class="p-4 md:p-0">
+                <h2 class="text-5xl capitalize font-semibold">Need Help?</h2>
+                <h3 class="my-4">We are here for 24/7 support.</h3>
+                <ul class="md:flex">
+                    <li class="md:mr-4 flex items-center">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg>
+                        <span class="ml-2">contact@ekotahost.com</span>
+                    </li>
+                    <li class="md:mx-4 flex items-center">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                        </svg>
+                        <span class="ml-2">01534-612121</span>
+                    </li>
+                    <li class="md:ml-4 flex items-center">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                        </svg>
+                        <span class="ml-2">01971-445679</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img src="img/help.png" alt="support">
+            </div>
+        </div>
+    </div>
+
+    <div class="py-10 border-t border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="text-xl font-semibold border-b-2 mb-4 inline-block capitalize">disclaimer:-</div>
+            <ul>
+                <li><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2 rounded"></span>The offer is valid only for
+                    1<sup>st</sup> year.</li>
+                <li><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2 rounded"></span>The offer is valid only for
+                    new customer purchase. If you have already service with us, you can't replace that service by this
+                    offer.</li>
+                <li><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2 rounded"></span>Any service which is
+                    purchased with this offer is non-refundable.</li>
+                <li><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2 rounded"></span>Free site migration is not
+                    available for this offers.</li>
+                <li><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2 rounded"></span>A customer can take only
+                    one service of this offer</li>
+                <li><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2 rounded"></span>Free .xyz domain is not
+                    available for this offer.</li>
+                <li><span class="bg-gray-800 w-2 h-2 inline-block mb-px mr-2 rounded"></span>We reserve the right to
+                    cancel orders that violate our terms & conditions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-black text-center text-white">
+        <p class="py-2">Copyright © 2020 EkotaHost. All Rights Reserved.</p>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script>
+        $("#countdown").countdown('2020/11/30', function (event) {
+            $(this).html(event.strftime('' + '<div class="flex justify-between md:w-96 mx-auto">' + '<div class="px-2">' + '<h2 class="mb-0 md:text-5xl">%-D</h2>' + '<h5 class="mb-0 md:text-xl">Day%!d</h5>' + '</div>' + '<div class="px-2">' + '<h2 class="mb-0 md:text-5xl">%H</h2>' + '<h5 class="mb-0 md:text-xl">Hours</h5>' + '</div>' + '<div class="px-2">' + '<h2 class="mb-0 md:text-5xl">%M</h2>' + '<h5 class="mb-0 md:text-xl">Minutes</h5>' + '</div>' + '<div class="px-2">' + '<h2 class="mb-0 md:text-5xl">%S</h2>' + '<h5 class="mb-0 md:text-xl">Seconds</h5>' + '</div>' + '</div>'));
+        });
+    </script>
+</body>
+
+</html>
